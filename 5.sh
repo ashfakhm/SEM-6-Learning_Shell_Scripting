@@ -1,8 +1,7 @@
 #!/usr/bin/bash
-echo "Enter Three Numbers"
-read n1
-read n2
-read n3
+
+read -p "Enter Three Numbers" n1 n2 n3
+
 if [ $n1 -gt $n2 ]
 then
 if [ $n1 -gt $n3 ]

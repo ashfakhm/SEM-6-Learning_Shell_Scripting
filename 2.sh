@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-echo "System date and time:"
-date +"Date: %d/%m/%Y Time: %H:%M:%S"
+date "+Current System Date and Time: %d/%m/%Y %H:%M:%S"

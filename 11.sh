@@ -1,14 +1,18 @@
-#!/usr/bin/bash
-sum=0
-if [ $# -eq 0 ]
-then
-echo "Please provide some numbers"
-exit 0
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+    echo "Give some numbers"
+    exit
 fi
-for i in "$@"
+
+sum=0
+
+for num in "$@"
 do
-sum=$((sum + i))
+    sum=$((sum + num))
 done
+
 avg=$((sum / $#))
-echo "The sum of the numbers is : $sum"
-echo "The average of the numbers is : $avg"
+
+echo "Sum = $sum"
+echo "Average = $avg"

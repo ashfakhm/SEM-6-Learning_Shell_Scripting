@@ -1,8 +1,9 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+
 hour=$(date +%H)
-if [ $hour -gt 0 ] && [ $hour -lt 12 ]
-then
-echo "Good Morning!"
+
+if (( hour < 12 )); then
+    echo "Good Morning!"
 else
-echo "Good Evening!"
+    echo "Good Evening!"
 fi

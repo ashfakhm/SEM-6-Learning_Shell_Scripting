@@ -1,7 +1,9 @@
-#!/usr/bin/bash
-echo "Enter a sentence:"
-read str
-word=$(printf "%s" "$str" | wc -w)
-char=$(printf "%s" "$str" | wc -c)
-echo "Number of words: $word"
-echo "Number of characters: $char"
+#!/usr/bin/env bash
+
+read -p "Enter a sentence: " str
+
+words=$(echo "$str" | wc -w)
+chars=$(echo "$str" | wc -c)
+
+echo "Words = $words"
+echo "Characters = $chars"

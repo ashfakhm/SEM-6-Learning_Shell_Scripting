@@ -7,11 +7,12 @@ if (( n < 2 )); then
     exit
 fi
 
-for ((i=2; i*i<=n; i++)); do
+for ((i=2; i<=n/2; i++)); do
     if (( n % i == 0 )); then
         echo "Not Prime"
         exit
     fi
 done
+
 
 echo "Prime"

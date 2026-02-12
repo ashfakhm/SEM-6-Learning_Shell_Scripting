@@ -1,4 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+
 mkdir "program-1"
 echo "Directory Created"
 cd program-1

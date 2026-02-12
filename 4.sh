@@ -1,4 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+
 read -p "Enter a number :" n
 
 if ! [ "$n" -eq "$n" ] 2>/dev/null; then

@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
-read -p "Enter a number: " limit
-
+read -p "Enter limit: " limit
 a=0
 b=1
 
-echo "Fibonacci numbers:"
-echo -n "$a "
-
-while [ $b -lt $limit ]
-do
+echo -n "Fibonacci: $a "
+while (( b < limit )); do
     echo -n "$b "
-    next=$(( a + b ))  # calculate next number
-    a=$b               # shift values
+    next=$((a + b))
+    a=$b
     b=$next
 done
+echo
+

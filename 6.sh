@@ -3,9 +3,10 @@
 read -p "Enter three numbers: " a b c
 
 sum=$((a + b + c))
-mean=$(echo "$sum / 3" | bc -l)
-sd=$(echo "sqrt((($a-$mean)^2 + ($b-$mean)^2 + ($c-$mean)^2)/3)" | bc -l) # equation for standard deviation
+mean=$(echo "scale=2; $sum / 3" | bc)
+sd=$(echo "scale=2; sqrt((($a-$mean)^2 + ($b-$mean)^2 + ($c-$mean)^2)/3)" | bc -l)
 
-echo "sum=$sum"
-echo "mean=$mean"
-echo "sd=$sd"
+echo "Sum = $sum"
+echo "Mean = $mean"
+echo "SD = $sd"
+

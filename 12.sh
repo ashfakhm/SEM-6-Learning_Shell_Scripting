@@ -2,17 +2,16 @@
 
 read -p "Enter a number: " n
 
-if [ $n -lt 2 ]; then
-    echo "Not a prime number"
+if (( n < 2 )); then
+    echo "Not Prime"
     exit
 fi
 
-for ((i=2; i<=n/2; i++))
-do
+for ((i=2; i*i<=n; i++)); do
     if (( n % i == 0 )); then
-        echo "Not a prime number"
+        echo "Not Prime"
         exit
     fi
 done
 
-echo "Prime number"
+echo "Prime"

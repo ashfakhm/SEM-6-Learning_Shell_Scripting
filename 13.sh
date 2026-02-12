@@ -8,12 +8,7 @@ case $op in
     +) echo "Result = $((n1 + n2))" ;;
     -) echo "Result = $((n1 - n2))" ;;
     \*) echo "Result = $((n1 * n2))" ;;
-    /)
-        if [ $n2 -eq 0 ]; then
-            echo "Cannot divide by zero"
-        else
-            echo "Result = $(echo "$n1 / $n2" | bc -l)"
-        fi
-        ;;
+    /) (( n2 == 0 )) && echo "Div by zero" || echo "Result = $(echo "scale=2; $n1 / $n2" | bc)" ;;
     *) echo "Invalid operator" ;;
 esac
+

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-read -p "Enter Three Numbers" n1 n2 n3
-
 read -p "Enter three numbers: " n1 n2 n3
 
 if (( n1 >= n2 && n1 >= n3 )); then
@@ -11,4 +9,3 @@ elif (( n2 >= n1 && n2 >= n3 )); then
 else
     echo "Greatest is $n3"
 fi
-

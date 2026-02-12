@@ -1,11 +1,14 @@
-#!/usr/bin/bash
-echo "Enter a number :"
-read n
-s=0
+#!/usr/bin/env bash
+
+read -p "Enter a number: " n
+
+sum=0
+
 while [ $n -gt 0 ]
 do
-d=$((n%10))
-s=$((s+d))
-n=$((n/10))
+    digit=$(( n % 10 ))   # get last digit
+    sum=$(( sum + digit )) # add digit
+    n=$(( n / 10 ))        # remove last digit
 done
-echo "$s"
+
+echo "Sum = $sum"

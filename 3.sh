@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -p "Number: " n
+read -p "Enter A Number: " n
 
 if (( n > 0 )); then
     echo "Positive"

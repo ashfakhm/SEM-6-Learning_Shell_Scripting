@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-echo "Enter a number :"
-read n
+read -p "Enter a number :" n
 
 if ! [ "$n" -eq "$n" ] 2>/dev/null; then
 	echo "Invalid input: please enter an integer"

@@ -1,11 +1,14 @@
-#!/usr/bin/bash
-echo "Enter a number :"
-read n
-r=0
+#!/usr/bin/env bash
+
+read -p "Enter a number: " n
+
+rev=0
+
 while [ $n -gt 0 ]
 do
-d=$((n%10))
-r=$(((r*10+d)))
-n=$((n/10))
+    digit=$(( n % 10 ))      # get last digit
+    rev=$(( rev * 10 + digit )) # build reversed number
+    n=$(( n / 10 ))          # remove last digit
 done
-echo "$r"
+
+echo "Reverse = $rev"

@@ -163,10 +163,18 @@ Result = 50
 ### 14. Greeting Based on Time (`14.sh`)
 
 **Execution:** `bash 14.sh`
+**Output (Morning Example):**
+
+```
+Enter hour (24-hour format): 10
+Good Morning!
+```
+
+**Execution (Evening Example):** `echo "18" | bash 14.sh`
 **Output:**
 
 ```
-Good Evening!
+Enter hour (24-hour format): Good Evening!
 ```
 
 ---

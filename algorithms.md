@@ -103,12 +103,14 @@ Below are the simple step-by-step algorithms for each of the 15 shell scripts in
 ## 11. Sum and Average from Command Arguments
 
 1. Start
-2. Read numbers from command line arguments
-3. Initialize sum to 0
-4. Add each argument to sum
-5. Calculate average
-6. Print sum and average
-7. End
+2. Check if any command line arguments are provided
+3. If no arguments, print an error message and exit
+4. Read numbers from command line arguments
+5. Initialize sum to 0
+6. Add each argument to sum
+7. Calculate average (Sum / Number of arguments)
+8. Print sum and average
+9. End
 
 ## 12. Check if Number is Prime
 
@@ -133,11 +135,10 @@ Below are the simple step-by-step algorithms for each of the 15 shell scripts in
 ## 14. Greeting Based on Time
 
 1. Start
-2. Get current hour
-3. If hour < 12, print "Good Morning"
-4. Else if hour < 16, print "Good Afternoon"
-5. Else, print "Good Evening"
-6. End
+2. Read hour (24-hour format) from the user
+3. If hour < 12, print "Good Morning!"
+4. Else, print "Good Evening!"
+5. End
 
 ## 15. Count Words and Characters in a Sentence
 

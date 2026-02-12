@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo "Enter three numbers (space-separated):"
 read a b c
 

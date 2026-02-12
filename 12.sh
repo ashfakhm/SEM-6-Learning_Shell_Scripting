@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo "Enter a number:"
 read n
 if [ "$n" -lt 2 ] 2>/dev/null; then

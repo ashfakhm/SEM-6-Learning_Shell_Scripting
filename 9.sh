@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo -n "Enter a number : "
 read limit
 a=0

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 echo "Enter a sentence:"
 read str
 word=$(printf "%s" "$str" | wc -w)

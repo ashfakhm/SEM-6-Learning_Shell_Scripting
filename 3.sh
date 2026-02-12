@@ -1,6 +1,5 @@
-#!/bin/bash
-echo "Enter a number :"
-read n
+#!/usr/bin/bash
+read -p "Enter a number: " n
 
 if [ "$n" -gt 0 ] 2>/dev/null; then
 	echo "Number is Positive"

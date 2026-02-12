@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
-read -p "Enter a number: " n
+read -p "Number: " n
 
-if [ "$n" -gt 0 ] 2>/dev/null; then
-	echo "Number is Positive"
-elif [ "$n" -lt 0 ] 2>/dev/null; then
-	echo "Number is Negative"
-elif [ "$n" -eq 0 ] 2>/dev/null; then
-	echo "Number is Zero"
+if (( n > 0 )); then
+    echo "Positive"
+elif (( n < 0 )); then
+    echo "Negative"
 else
-	echo "Invalid input: please enter an integer"
+    echo "Zero"
 fi

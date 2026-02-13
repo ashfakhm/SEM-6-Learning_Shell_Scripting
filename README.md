@@ -35,6 +35,7 @@ This repository contains 15 simple shell scripts for common programming lab task
 13. **13.sh** – Simple calculator (add, subtract, multiply, divide)
 14. **14.sh** – Print "Good Morning" or "Good Evening" based on input hour
 15. **15.sh** – Count the number of words and characters in a sentence
+16. **16.sh** – Check if a 3-digit number is an Armstrong number
 
 ## Tips
 

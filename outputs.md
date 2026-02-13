@@ -189,3 +189,25 @@ Enter hour (24-hour format): Good Evening!
 Words: 2
 Chars: 11
 ```
+
+---
+
+### 16. Armstrong Number Check (`16.sh`)
+
+**Input:** `153`
+**Execution:** `echo "153" | bash 16.sh`
+**Output:**
+
+```
+153 is an Armstrong number
+```
+
+**Input:** `123`
+**Execution:** `echo "123" | bash 16.sh`
+**Output:**
+
+```
+123 is not an Armstrong number
+```
+
+---

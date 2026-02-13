@@ -148,3 +148,16 @@ Below are the simple step-by-step algorithms for each of the 15 shell scripts in
 4. Count number of characters
 5. Print counts
 6. End
+
+## 16. Armstrong Number Check
+
+1. Start
+2. Read a 3-digit number from the user
+3. Initialize sum = 0, temp = number
+4. For each digit in the number:
+   - Extract the digit
+   - Add the cube of the digit to sum
+   - Remove the last digit from temp
+5. If sum equals the original number, print "Armstrong number"
+6. Else, print "Not an Armstrong number"
+7. End
